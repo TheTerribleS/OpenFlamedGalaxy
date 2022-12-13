@@ -9,6 +9,7 @@ using UnityEngine.Events;
 public class WorldContext : MonoBehaviour
 {
     public static WorldContext Instance;
+    [SerializeField] private WolrdContextImport data;
     [SerializeField] private GameObject AmmoGo;
     [SerializeField] private Factions  faction;
     [SerializeField] private DangerLevel danger;
@@ -39,7 +40,10 @@ public class WorldContext : MonoBehaviour
             _ammo.Add(Instantiate(AmmoGo, transform).GetComponent<Ammo>());
             _ammo[i].Deactivate();
         }
-        
+
+        stationLevel = data.BaseLevel;
+        danger = data.level;
+
     }
 
     public void AddShip(Ship ship)

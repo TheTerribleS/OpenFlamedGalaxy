@@ -703,6 +703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9389e31b264d4294ca40646b99be272a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: a441386f0ad7497438447f188647a2b8, type: 2}
   AmmoGo: {fileID: 5096308081504719556, guid: d8f6b3b0dcc72154780edeb37f874443, type: 3}
   faction: 0
   danger: 3
